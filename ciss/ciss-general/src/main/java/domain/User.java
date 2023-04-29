@@ -11,7 +11,7 @@ import java.time.LocalDate;
 @Entity
 @Table(name = "user")
 /**
- * Сущность пользователь.
+ * Сущность пользователь. Уникальная для каждого человека в рамках системы.
  */
 public class User {
     /**

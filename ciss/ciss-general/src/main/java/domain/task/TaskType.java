@@ -9,6 +9,9 @@ import lombok.Setter;
 @Setter
 @Entity
 @Table(name = "task_type")
+/**
+ * Тип заявки.
+ */
 public class TaskType {
     @Id
     @Column(name = "id", nullable = false)

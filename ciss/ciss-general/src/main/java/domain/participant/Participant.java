@@ -12,7 +12,7 @@ import java.util.List;
 @Entity
 @Table(name = "participant")
 /**
- * Абстрактный класс участника процесса.
+ * Абстрактный класс участника процесса. Является общим описанием пользователя в рамках процесса по заявке.
  */
 public abstract class Participant {
 

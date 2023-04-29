@@ -11,6 +11,9 @@ import lombok.Setter;
 @Setter
 @Entity
 @Table(name = "task_status")
+/**
+ * Статус завки.
+ */
 public class TaskStatus {
     @Id
     @Column(name = "id", nullable = false)
