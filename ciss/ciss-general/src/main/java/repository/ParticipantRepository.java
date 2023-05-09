@@ -1,0 +1,11 @@
+package repository;
+
+import domain.participant.Participant;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface ParticipantRepository extends JpaRepository<Participant, String> {
+
+    Participant findParticipantByUserIdAndRoleName(String userId, String roleName);
+}

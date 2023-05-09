@@ -11,6 +11,7 @@ import service.mappers.UserMapper;
 /**
  * Класс контроллера для работы с пользователем.
  */
+@CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
 @RequestMapping("home/user")
 public class UserController {
@@ -57,5 +58,21 @@ public class UserController {
                     .body("Error: user with id " + id + " not exist");
         }
         return ResponseEntity.ok().body(userService.findById(id));
+    }
+
+    /**
+     * Метод удаления пользователя по id.
+     * @param id id пользователя.
+     * @return Возвращение сообщения о результате удаления.
+     */
+    @DeleteMapping("/delete/{id}")
+    public ResponseEntity<?> deleteAnimal(@PathVariable String id) {
+        if (userService.existById(id)) {
+            return ResponseEntity
+                    .badRequest()
+                    .body("Error: user with id " + id + " not exist");
+        }
+        userService.deleteById(id);
+        return ResponseEntity.ok().body("User deleted successfully!");
     }
 }

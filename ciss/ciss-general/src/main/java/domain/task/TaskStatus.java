@@ -15,6 +15,18 @@ import lombok.Setter;
  * Статус завки.
  */
 public class TaskStatus {
+
+    public static final class Names {
+        public static final String REGISTERED = "registered";
+
+        public static final String PERFORMED = "performed";
+
+        public static final String COMPLETED = "completed";
+
+        public static final String RETURNED = "returned";
+
+        public static final String CLOSED = "closed";
+    }
     @Id
     @Column(name = "id", nullable = false)
     private String id;

@@ -18,5 +18,5 @@ public class UserDto implements Serializable {
     private final LocalDate birthday;
     private final String login;
     private final String passwordHash;
-    private final Department department;
+    //private final Department department;
 }

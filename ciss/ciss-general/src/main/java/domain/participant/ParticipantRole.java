@@ -13,6 +13,14 @@ import lombok.Setter;
  */
 public class ParticipantRole {
 
+    public static final class Names {
+        public static final String APPLICANT = "APPLICANT";
+
+        public static final String EXECUTOR = "EXECUTOR";
+
+        public static final String LEAD_EXECUTOR = "LEAD EXECUTOR";
+    }
+
     /**
      * Id роли участника.
      */

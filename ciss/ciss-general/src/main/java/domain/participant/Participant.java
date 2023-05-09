@@ -10,7 +10,7 @@ import java.util.List;
 @Getter
 @Setter
 @Entity
-@Table(name = "participant")
+@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 /**
  * Абстрактный класс участника процесса. Является общим описанием пользователя в рамках процесса по заявке.
  */

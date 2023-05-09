@@ -52,4 +52,8 @@ public class UserService {
     public User findById(String id) {
         return userRepository.findById(id).orElse(null);
     }
+
+    public void deleteById(String id) {
+        userRepository.deleteById(id);
+    }
 }

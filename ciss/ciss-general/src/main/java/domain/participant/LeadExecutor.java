@@ -8,6 +8,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
+@Table(name = "lead_executor")
 /**
  * Класс ведущего испонителя.
  */
